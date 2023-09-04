@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/divyaporwal-hub.io/kalam/static/css/main.cc91139f.css",
+    "main.js": "/divyaporwal-hub.io/kalam/static/js/main.c4025eca.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/divyaporwal-hub.io/kalam/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/mainIntroImage.png": "/divyaporwal-hub.io/kalam/static/media/mainIntroImage.8fa21fdf319f92fbd304.png",
+    "static/media/blog1.jpg": "/divyaporwal-hub.io/kalam/static/media/blog1.3045d73ebfd39378e24d.jpg",
+    "static/media/userAvatar.png": "/divyaporwal-hub.io/kalam/static/media/userAvatar.a6143582309785dca610.png",
+    "index.html": "/divyaporwal-hub.io/kalam/index.html",
+    "main.cc91139f.css.map": "/divyaporwal-hub.io/kalam/static/css/main.cc91139f.css.map",
+    "main.c4025eca.js.map": "/divyaporwal-hub.io/kalam/static/js/main.c4025eca.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/divyaporwal-hub.io/kalam/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cc91139f.css",
+    "static/js/main.c4025eca.js"
+  ]
+}
