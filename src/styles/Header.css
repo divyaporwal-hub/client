@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Josefin+Sans:wght@200&family=Kanit&family=Oswald:wght@200&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Dancing+Script:wght@700&family=Josefin+Sans:wght@200&family=Kanit&family=Oswald:wght@200&family=Roboto:wght@100&display=swap");
+.main__header {
+  display: flex;
+  flex-direction: column;
+  font-family: "Acme", sans-serif;
+}
+
+.main__header .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid rgb(221, 221, 221);
+  z-index: 10;
+}
+
+.main__header .header .leftSection {
+  display: flex;
+  align-items: center;
+  width: 70%;
+}
+
+.main__header .header .leftSection .searchContainer {
+  position: absolute;
+}
+
+.main__header .header .leftSection .allSearchResults {
+  position: absolute;
+  left: 10%;
+  margin-left: 30px;
+  top: 60px;
+  width: 90%;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 5px;
+  transition: all 200ms linear;
+}
+.main__header .header .leftSection .allSearchResults .searchResultContainer a {
+  text-decoration: none;
+}
+.main__header
+  .header
+  .leftSection
+  .allSearchResults
+  .searchResultContainer
+  .searchResult {
+  width: 100%;
+  display: flex;
+  font-size: 1.2rem;
+  padding: 10px 5px;
+  cursor: pointer;
+  flex-direction: column;
+  margin: 5px 0;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(9px);
+  border-radius: 6px;
+  transition: all 200ms linear;
+  color: black;
+}
+
+.main__header
+  .header
+  .leftSection
+  .allSearchResults
+  .searchResultContainer
+  .searchResult:hover {
+  background: rgba(206, 205, 205, 0.514);
+}
+
+.main__header
+  .header
+  .leftSection
+  .searchContainer
+  .searchResultContainer
+  .searchResult {
+  padding: 10px;
+  margin: 3px 0;
+  cursor: pointer;
+}
+
+.main__header .header .leftSection input[type="search"] {
+  background-color: #eeeeee;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  margin-left: 30px;
+  outline: none;
+  padding: 7px 15px;
+  transition: all 200ms linear;
+}
+.main__header .header .leftSection input[type="search"]:focus {
+  box-shadow: 0 0 0 2px rgb(44, 44, 44);
+  background-color: #f8f8f8;
+  box-shadow: rgb(50 50 93 / 0%) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.212) 0px 8px 16px -8px, 0 0 0 2px #0000004d;
+}
+.main__header .header .leftSection input[type="search"]::placeholder {
+  color: rgb(179, 179, 179);
+  font-weight: 300;
+}
+
+.main__header .header .leftSection .logoName {
+  color: black;
+  font-family: "Dancing Script", cursive;
+}
+
+.main__header .header .rightSection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.main__header .header .rightSection .writeLink {
+  text-decoration: none;
+  color: rgb(151, 151, 151);
+  transition: all 200ms linear;
+  margin-right: 20px;
+  font-size: 1.2rem;
+}
+
+.main__header .header .rightSection .writeLink svg {
+  margin-right: 5px;
+}
+
+.main__header .header .rightSection .writeLink:hover {
+  color: black;
+}
+
+.main__header .header .rightSection img {
+  height: 40px;
+  width: 40px;
+}
+.main__header .header .rightSection .searchIcon {
+  margin-right: 20px;
+  color: grey;
+  transition: all 200ms linear;
+  cursor: pointer;
+}
+
+.main__header .header .rightSection .searchIcon:hover {
+  color: black;
+}
+
+@media screen and (min-width: 320px) {
+  .main__header .header .leftSection .searchContainer {
+    display: none;
+    top: 65px;
+    left: -10px;
+    width: 90%;
+  }
+
+  .main__header .header .leftSection .searchContainer input {
+    width: 100%;
+  }
+
+  .main__header .header .leftSection .allSearchResults {
+    left: -3%;
+    top: 105px;
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .main__header .header .leftSection .searchContainer {
+    display: inline;
+    top: 10px;
+    left: 80px;
+    width: 50%;
+  }
+  .main__header .header .leftSection .searchIcon {
+    display: none;
+  }
+
+  .main__header .header .leftSection .searchContainer input {
+    width: 90%;
+  }
+
+  .main__header .header .leftSection .allSearchResults {
+    left: 6%;
+    top: 60px;
+    width: 45%;
+  }
+}

@@ -1,0 +1,37 @@
+.commentInput {
+  display: flex;
+}
+
+.commentInput form {
+  display: flex;
+  width: 100%;
+  margin: 30px 0;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.commentInput form textarea {
+  outline: none;
+  border: none;
+  font-size: 1.2rem;
+  width: 100%;
+  resize: none;
+  border: 2px solid rgba(128, 128, 128, 0);
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: all 140ms linear;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.commentInput form .top textarea:focus {
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.432) 0px 0px 0px 1px;
+}
+
+.commentInput form .bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  align-items: center;
+}

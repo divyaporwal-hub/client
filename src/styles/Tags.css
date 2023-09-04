@@ -1,0 +1,33 @@
+.Tags {
+  /* color: white; */
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+  /* background-color: rgba(243, 243, 243, 0.875); */
+  border-radius: 7px;
+}
+
+.Tags h1 {
+  color: rgb(27, 26, 26);
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.Tags .allTags {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+}
+@media screen and (min-width: 320px) {
+  .Tags {
+    display: none;
+  }
+}
+@media screen and (min-width: 481px) {
+  .Tags {
+    display: flex;
+  }
+}

@@ -1,0 +1,73 @@
+.formContainer {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 200ms linear;
+}
+
+.formContainer {
+  background: url("https://img.freepik.com/premium-photo/notebook-with-black-sheets-white-spiral-binder-black-pen-dark-background-top-view-copy-space-business-education-minimal-concept_259229-739.jpg")
+    no-repeat center center fixed;
+  height: 100vh;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+.formContainer form {
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-top: 30px;
+  background-color: white;
+  font-weight: 500;
+  transition: all 200ms linear;
+}
+
+.formContainer form .formGroup {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.formContainer form .formGroup input {
+  width: 100%;
+  font-size: 1.3rem;
+  padding: 8px 10px;
+  outline: none;
+  border: none;
+  background-color: #e2e2e2;
+  /* border-radius: 3px; */
+}
+
+.formContainer form .formGroup .passwordShowHide {
+  background-color: rgb(226, 226, 226);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 45px;
+  cursor: pointer;
+}
+
+.formContainer form .formGroup a {
+  text-decoration: none;
+}
+
+.formContainer form .formGroup .lineSeperator {
+  height: 1px;
+  width: 100%;
+  background-color: rgb(192, 191, 191);
+}
+
+.formContainer form .formGroup .registerLink {
+  color: white;
+  text-decoration: none;
+  padding: 8px 10px;
+  border-radius: 5px;
+  background-color: black;
+}

@@ -1,0 +1,104 @@
+.Navbar {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  border-right: 1px solid #c0c0c081;
+  background-color: #f8f8f8;
+  z-index: 20;
+}
+
+.Navbar .navbarContainer {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding-top: 10px;
+}
+
+.Navbar .navbarContainer .itemLink .menuItem {
+  padding: 10px 10px;
+  border-radius: 6px;
+  margin: 5px 10px;
+  transition: all 200ms linear;
+  display: flex;
+  align-items: center;
+}
+
+.Navbar .navbarContainer .itemLink .menuItemLogo {
+  padding-bottom: 0 !important;
+}
+
+.Navbar .navbarContainer .itemLink .menuItemLogo:hover {
+  background-color: rgb(245, 245, 245);
+}
+
+.Navbar .navbarContainer .itemLink .menuItem {
+  color: grey;
+  margin-right: 5px;
+}
+
+.Navbar .navbarContainer .itemLink .menuItem svg {
+  width: 30%;
+  font-size: 1.2rem;
+}
+
+.Navbar .navbarContainer .itemLink .menuItem div {
+  width: 70%;
+  font-size: 1.5rem;
+}
+
+.Navbar .navbarContainer .itemLink .activeNav {
+  font-weight: 600;
+  color: black;
+}
+
+.Navbar .navbarContainer .itemLink .menuItem:hover {
+  background-color: #e7e7e7;
+}
+
+.Navbar .navbarContainer .itemLink {
+  text-decoration: none;
+  font-weight: 400;
+  color: black;
+}
+
+.Navbar .navbarContainer .hamburger svg {
+  position: absolute;
+  top: 7px;
+  left: 210px;
+  width: 50px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background-color: #efefef;
+  /* border-radius: 0px 4px 4px 0px; */
+  padding: 7px 0px;
+  color: grey;
+  border: 2px solid #a0a0a0;
+}
+
+.showNav {
+  left: 0;
+}
+
+.hideNav {
+  left: -200px;
+}
+
+@media (min-width: 320px) {
+  /* smartphones, iPhone, portrait 480x320 phones */
+  .showNav {
+    left: 0px;
+  }
+
+  .hideNav {
+    left: -200px;
+  }
+}
+
+@media (min-width: 481px) {
+  /* smartphones, iPhone, portrait 480x320 phones */
+  .hideNav {
+    left: 0px;
+  }
+}

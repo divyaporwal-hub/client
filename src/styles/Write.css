@@ -1,0 +1,188 @@
+.Write {
+  width: calc(75% - 200px);
+  margin-left: 25%;
+  display: flex;
+  flex-direction: column;
+}
+
+.Write .left {
+  position: absolute;
+  left: 0;
+}
+.Write .right {
+  margin-top: 30px;
+}
+
+.Write .right .rightEditorContainer {
+  background-color: #f5f5f5;
+  display: flex;
+  border-radius: 10px;
+  flex-direction: column;
+  margin-top: 30px;
+  padding: 10px 12px;
+  box-shadow: 0 0 0px 1px #b0acacbd;
+  overflow: auto;
+}
+
+.Write .right .rightEditorContainer .tagAreaContainer {
+  margin: 0 0 20px 0;
+}
+
+.Write .right .heading,
+.Write .right .btn-cnt {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Write .right .btn-cnt {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  top: 35px;
+}
+
+.Write .right .btn-cnt .publish-btn {
+  border-radius: 10px;
+  padding: 7px 20px;
+  font-size: 1.5rem;
+}
+
+.ql-container {
+  border: none !important;
+  font-size: 0.9rem;
+  height: 80% !important;
+}
+
+.ql-container .ql-tooltip {
+  left: 0 !important;
+}
+
+.ql-container .ql-editor {
+  overflow-y: hidden;
+  font-family: monospace;
+  height: auto;
+}
+
+.ql-container .ql-editor > * {
+  font-family: monospace;
+}
+
+.ql-snow * {
+  font-family: monospace;
+}
+
+.ql-toolbar {
+  border-radius: 38px !important;
+  box-shadow: rgb(0 0 0 / 15%) 0px 3px 3px 0px;
+  background-color: rgb(221, 221, 221);
+  font-size: 1.4rem;
+  display: flex;
+  overflow: auto;
+}
+
+.ql-snow .ql-formats {
+  display: flex;
+}
+
+/* .ql-toolbar .ql-formats button{
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  float: left;
+  height: 25px;
+  padding: 3px 5px;
+  width: 25px;
+} */
+
+/* .Write .right .blogHeadingContainer {
+  overflow: hidden;
+} */
+
+.Write .right .blogHeading {
+  font-size: 1.5rem;
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  margin-bottom: 20px;
+  border: none;
+  resize: none;
+  overflow: hidden;
+  padding: 5px 10px;
+  font-weight: 700;
+}
+
+.Write .right .editorContainer div {
+  width: 100% !important;
+}
+
+.Write .right .mainEditor {
+  width: 80%;
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e1e1e1;
+}
+
+/* .Write .right div input {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-bottom: 5px;
+  transition: all 150ms linear;
+} */
+
+/* .Write .right div input:focus {
+  border-bottom: 2px solid grey;
+} */
+
+.Write .right div .textEditor {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: lightgray;
+  padding: 10px;
+  overflow: hidden;
+  font-size: 1rem;
+  padding-bottom: 5px;
+  margin-top: 20px;
+  transition: all 150ms linear;
+}
+
+@media screen and (min-width: 320px) {
+  .Write {
+    width: 90%;
+    margin: auto;
+  }
+  .Write .right div .textEditor {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .Write {
+    width: calc(75% - 200px);
+    margin-left: 25%;
+  }
+  .Write .right .blogHeading {
+    font-size: 2.5rem;
+  }
+  .ql-container {
+    font-size: 1.2rem;
+  }
+  .Write .right div .textEditor {
+    font-size: 1.2rem;
+  }
+}

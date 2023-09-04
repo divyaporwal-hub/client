@@ -1,0 +1,144 @@
+.Blog {
+  display: flex;
+  width: 100%;
+  margin: 20px 0;
+  border-radius: 5px;
+  flex-direction: row;
+  transition: all 200ms linear;
+}
+
+.Blog h1 {
+  text-align: left;
+  font-size: 1.6rem;
+  color: rgb(19, 19, 19);
+}
+
+.Blog .blogImage {
+  display: flex;
+}
+
+.Blog .blogImage .headingContainer {
+  background-color: #191919;
+  width: 540px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.6rem;
+  color: white;
+  min-height: 150px;
+  padding: 10px;
+}
+
+.Blog .blogImage img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.Blog .blogDetails {
+  display: flex;
+  margin-left: 10px;
+  flex-direction: column;
+  padding: 10px;
+  word-wrap: break-word;
+}
+
+.Blog .blogInfo {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #757373ba;
+  width: 100%;
+  font-weight: 400;
+}
+
+.Blog .blogInfo div.minRead {
+  /* margin: 3px 0; */
+  font-size: 14px;
+}
+
+.Blog .blogPreview {
+  margin: 5px 0px;
+  font-size: 1rem;
+  line-height: 1.4rem;
+}
+
+.Blog .blogTagsContainer {
+  display: flex;
+  margin: 3px 0;
+}
+
+.Blog .blogTagsContainer .blogTag {
+  background-color: #e4e4e4;
+  border-radius: 27px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-right: 7px;
+  padding: 4px 9px;
+  color: #585454;
+  transition: all 0.2s linear;
+}
+
+.Blog .blogDetails .readMoreLink {
+  color: #3cb2ff;
+  font-size: 1.1rem;
+  width: 100px;
+  transition: all 200ms linear;
+}
+
+.Blog .blogDetails .readMoreLink:hover {
+  text-decoration: underline;
+}
+
+.Blog .blogDetails a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 200ms linear;
+}
+
+.Blog .blogDetails a.userLink:hover {
+  color: black;
+}
+
+.Blog .imageLink {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+@media (min-width: 320px) {
+  .Blog .imageLink {
+    display: none;
+  }
+  .Blog .blogImage {
+    width: 30%;
+    margin: 0 auto;
+    display: none; /* flex */
+  }
+  .Blog .blogDetails {
+    width: 95%;
+    margin: 0 auto;
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: 481px) {
+  .Blog .imageLink {
+    display: flex;
+  }
+  .Blog .blogImage {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .Blog .blogDetails {
+    width: 70%;
+    margin: 0 auto;
+    margin-left: 20px;
+  }
+}

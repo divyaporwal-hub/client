@@ -1,0 +1,48 @@
+.footerContainer {
+  display: flex;
+  background-color: #c0c0c03d;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+
+.footerContainer > div {
+  display: flex;
+  font-size: 1.3rem;
+  margin: 0 5px;
+  align-items: center;
+}
+
+.footerContainer .likeContainer {
+  cursor: pointer;
+}
+
+.footerContainer .likeContainer .likeIcon .notliked {
+  color: #828282;
+}
+
+.footerContainer > div .icon {
+  padding: 8px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 2px;
+  transition: all 170ms linear;
+}
+
+.footerContainer > div .icon:hover {
+  background-color: rgb(204, 204, 204);
+}
+
+.footerContainer .likeContainer .likeIcon .liked {
+  color: blue;
+}
+.footerContainer .shareSection .shareOptions button {
+  margin-left:10px;
+  color:grey;
+
+}
+.footerContainer .shareSection .shareOptions button svg {
+  color:rgb(116, 110, 110);
+}
+

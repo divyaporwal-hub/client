@@ -1,0 +1,88 @@
+.BlogInfoUser {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+}
+
+.BlogInfoUser .top {
+  display: flex;
+  align-items: center;
+}
+
+.BlogInfoUser .top img {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+.BlogInfoUser .top .fullName {
+  font-size: 1rem;
+  margin-left: 10px;
+}
+
+.BlogInfoUser .top .fullName a {
+  text-decoration: none;
+  color: black;
+}
+
+.BlogInfoUser .top .followers {
+  font-size: 0.85rem;
+  margin-left: 10px;
+  color: grey;
+}
+
+.BlogInfoUser .middle {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.BlogInfoUser .middle button {
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 5px 10px;
+  transition: all 170ms linear;
+}
+
+.BlogInfoUser .middle button.follow {
+  background-color: #45aaff;
+  color: white;
+}
+
+.BlogInfoUser .middle button.follow:hover {
+  background-color: #288bdb;
+}
+
+.BlogInfoUser .middle button.following {
+  background-color: #d1d1d1c9;
+  color: #565656;
+}
+
+.BlogInfoUser .middle button.following:hover {
+  background-color: #aaaaaac9;
+}
+
+/* .BlogInfoUser .middle button:hover {
+  background-color: #684ca8;
+} */
+
+.BlogInfoUser .middle .socialMediaLinkContainer {
+  font-size: 1.5rem;
+}
+
+.BlogInfoUser .middle .socialMediaLinkContainer svg {
+  margin-left: 16px;
+  color: grey;
+  cursor: pointer;
+  transition: all 200ms linear;
+}
+
+.BlogInfoUser .middle .socialMediaLinkContainer svg:hover {
+  color: rgb(59, 59, 59);
+}
+
+.BlogInfoUser .middle .userBio {
+  font-size: 0.9rem;
+  line-height: 25px;
+}

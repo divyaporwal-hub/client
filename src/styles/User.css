@@ -1,0 +1,73 @@
+.profileContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffffd6;
+}
+
+.profileContainer img {
+  height: 200px;
+  width: 200px;
+}
+
+.profileContainer .fullname {
+  font-size: 2rem;
+  margin-top: 5px;
+}
+
+.profileContainer .username {
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-style: italic;
+  color: royalblue;
+}
+
+.profileContainer .bio {
+  font-size: 1.1rem;
+  margin-top: 10px;
+  width: 35%;
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.6rem;
+}
+
+.profileContainer .secondaryInfo {
+  display: flex;
+  margin: 20px 0;
+  font-size: 1rem;
+}
+
+.profileContainer .secondaryInfo p {
+  margin: 0 5px;
+}
+
+.profileContainer .socialMedia {
+  font-size: 1.8rem;
+}
+
+.profileContainer .socialMedia a {
+  color: grey;
+  margin: 0 10px;
+  transition: all 150ms linear;
+}
+
+.profileContainer .socialMedia a:hover {
+  color: white;
+}
+
+.profileContainer .editButtonLink {
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 320px) {
+  .profileContainer .bio {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 481px) {
+  .profileContainer .bio {
+    width: 35%;
+  }
+}

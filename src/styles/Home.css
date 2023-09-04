@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Josefin+Sans:wght@200&family=Kanit&family=Oswald:wght@200&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Dancing+Script:wght@700&family=Josefin+Sans:wght@200&family=Kanit&family=Oswald:wght@200&family=Roboto:wght@100&display=swap");
+
+.Home {
+  display: flex;
+  flex-direction: column;
+  font-family: "Acme", sans-serif;
+}
+
+.Home .main {
+  display: flex;
+}
+
+.Home .main .left {
+  width: 20%;
+  position: fixed;
+}
+
+.Home .main .right {
+  width: calc(100% - 200px);
+  margin-left: 200px;
+  display: flex;
+}
+
+.Home .main .informationContainer {
+  width: 80%;
+}
+
+.Home .main .right .informationContainer .blogsContainer {
+  margin: 5px 10px;
+}
+
+.Home .main .tagContainer {
+  width: 18%;
+  margin: 0px 5px 0px 0px;
+  border-radius: 10px;
+  position: fixed;
+  right: 0;
+}
+
+@media (min-width: 320px) {
+  /* smartphones, iPhone, portrait 480x320 phones */
+  .Home .main .right {
+    width: 100%;
+    margin-left: 0px;
+    /* z-index: -1; */
+  }
+  .Home .main .informationContainer {
+    width: 100%;
+  }
+  .Home .main .showHideSearch {
+    position: absolute;
+    top: 8px;
+    right: 5px;
+    font-size: 20px;
+  }
+
+  .Home .main .tagContainer {
+    width: 90vw;
+    position: relative;
+    top: 20px;
+  }
+
+  .Home .main .showHideSearch .searchIconContainer {
+    position: relative;
+    right: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .Home .main .showHideSearch .searchIconContainer:hover {
+    background-color: #e5e5e5;
+  }
+
+  .Home .main .showHideSearch .tagContainer .searchCloseIcon {
+    position: absolute;
+    top: -30px;
+    right: 5px;
+    font-size: 1.3rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .Home .main .showHideSearch .tagContainer .searchCloseIcon:hover {
+    background-color: #e5e5e5;
+  }
+
+  .Home .main .right .informationContainer .blogsContainer {
+    margin: 5px 0;
+  }
+}
+
+@media (min-width: 481px) {
+  .Home .main .tagContainer {
+    width: 19%;
+    margin: 0px 5px 0px 0px;
+    border-radius: 10px;
+    position: fixed;
+    right: 7px;
+    top: -8px;
+  }
+
+  .Home .main .right {
+    width: calc(100%-200px);
+    margin-left: 200px;
+  }
+
+  .Home .main .informationContainer {
+    width: 80%;
+  }
+}

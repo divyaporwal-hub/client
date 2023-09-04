@@ -1,0 +1,40 @@
+.HomeSearch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #e6e6e67a; */
+  margin: 10px 0 0 5px;
+  border-radius: 5px;
+}
+
+.HomeSearch form,
+.HomeSearch form .formGroup {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* align-items: center; */
+  justify-content: center;
+  padding: 7px 0;
+}
+
+.HomeSearch form .formGroup input {
+  padding: 4px 10px;
+  outline: none;
+  font-size: 1.3rem;
+  border: 2px solid rgba(128, 128, 128, 0.315);
+  border-radius: 4px;
+  margin-top: 8px;
+  transition: all 200ms linear;
+}
+
+.HomeSearch form .formGroup input:focus {
+  border: 2px solid rgba(128, 128, 128, 0.753);
+}
+
+.HomeSearch form .formGroup button {
+  background-color: #45aaff;
+}
+
+.HomeSearch form .formGroup button:hover {
+  background-color: #2a9af7;
+}

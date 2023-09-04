@@ -1,0 +1,100 @@
+.BlogInfoContainer {
+  display: flex;
+  flex-direction: row;
+  margin-top: 54px;
+}
+
+.BlogInfoContainer .loaderContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+
+.BlogInfoContainer .left {
+  width: 75%;
+  margin-top: 70px;
+}
+
+.BlogInfoContainer .left .blogDetailContainer {
+  width: 90%;
+  margin: auto;
+}
+
+.BlogInfoContainer .left .blogDetailContainer .BlogMainImage {
+  width: 100%;
+  display: flex;
+}
+
+.BlogInfoContainer .left .blogDetailContainer .BlogMainImage img {
+  width: 100%;
+  margin: 15px 0;
+  border-radius: 10px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+.BlogInfoContainer .left .blogDetailContainer .blogContent * {
+  line-height: 2rem;
+  font-size: 1.125rem;
+}
+
+.BlogInfoContainer .left .blogDetailContainer .blogContent p {
+  margin: 10px 0;
+}
+
+.BlogInfoContainer .right {
+  width: 25%;
+  border-left: 1.1px solid rgb(155 155 155 / 46%);
+  padding: 20px;
+  background-color: #c0c0c02e;
+}
+
+.BlogInfoContainer .blogTagsContainer {
+  display: flex;
+  margin-top: 25px;
+}
+
+.BlogInfoContainer .blogTagsContainer .blogTag {
+  margin-right: 10px;
+  background-color: #6e6c5230;
+  padding: 5px 15px;
+  font-size: 1rem;
+  border-radius: 22px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 200ms linear;
+}
+
+.BlogInfoContainer .blogTagsContainer .blogTag:hover {
+  background-color: #aaaaaa70;
+}
+
+@media screen and (min-width: 320px) {
+  .BlogInfoContainer .right {
+    display: none;
+  }
+  .BlogInfoContainer .left {
+    width: 100%;
+  }
+
+  .BlogInfoContainer .left .blogDetailContainer {
+    width: 87%;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .BlogInfoContainer .right {
+    width: 25%;
+    border-left: 1.1px solid rgb(155 155 155 / 46%);
+    padding: 20px;
+    background-color: #c0c0c02e;
+    display: flex;
+  }
+
+  .BlogInfoContainer .left .blogDetailContainer {
+    width: 80%;
+  }
+}

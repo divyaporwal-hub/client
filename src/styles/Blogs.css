@@ -1,0 +1,60 @@
+.Blogs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+}
+
+.Blogs .loaderContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Blogs .loaderContainer .loadingText {
+  margin-top: 10px;
+}
+
+.Blogs .mainHeading {
+  text-align: center;
+}
+
+.allBlogs {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 30px 20px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.allBlogs .blogLine {
+  height: 1px;
+  width: 95%;
+  margin: auto;
+  background-color: #dddddd;
+}
+
+.allBlogs .allBlogInfoContainer {
+  width: 90%;
+  margin: auto;
+}
+
+.searchBlogs {
+  position: relative;
+  top: 250px;
+}
+
+@media (min-width: 320px) {
+  .allBlogs .allBlogInfoContainer {
+    width: 100%;
+  }
+}
+
+@media (min-width: 481px) {
+  .allBlogs .allBlogInfoContainer {
+    width: 90%;
+  }
+}

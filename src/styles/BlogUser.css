@@ -1,0 +1,128 @@
+.BlogUserContainer {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  justify-content: space-between;
+}
+
+.BlogUserContainer .imageContainer img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #80808030;
+}
+
+.BlogUserContainer .userInfoContainer {
+  display: flex;
+  flex-direction: column;
+  /* margin-left: 20px; */
+  justify-content: space-between;
+  height: 45px;
+}
+
+.BlogUserContainer .blogUserPrimaryDetailsContainer {
+  display: flex;
+}
+
+.BlogUserContainer .userInfoContainer .blogPrimaryInfo a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  color: black;
+  text-transform: capitalize;
+}
+
+.BlogUserContainer .userInfoContainer .blogSecondaryInfo {
+  display: flex;
+  color: grey;
+  font-size: 0.95rem;
+}
+
+.BlogUserContainer .blogEditButtonsContainer {
+  display: flex;
+}
+
+.BlogUserContainer .followButtonContainer {
+  display: flex;
+  margin-left: 10px;
+}
+.BlogUserContainer .followButtonContainer button {
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 6px 15px;
+  transition: all 170ms linear;
+}
+.BlogUserContainer .followButtonContainer button.unfollow {
+  background-color: #45aaff;
+  color: white;
+}
+
+.BlogUserContainer .followButtonContainer button.unfollow:hover {
+  background-color: #288bdb;
+}
+
+.BlogUserContainer .followButtonContainer button.follow {
+  background-color: #d1d1d1c9;
+  color: #565656;
+}
+
+.BlogUserContainer .followButtonContainer button.follow:hover {
+  background-color: #aaaaaac9;
+}
+
+.BlogUserContainer .followButtonContainer button {
+  font-size: 1.2rem;
+  padding: 6px 10px;
+}
+
+/* .BlogUserContainer .followButtonContainer button.unfollow {
+  border: 2px solid blue;
+  background-color: white;
+  color: blue;
+}
+
+.BlogUserContainer .followButtonContainer button.follow {
+  border: 2px solid blue;
+  background-color: blue;
+  color: white;
+} */
+
+.BlogUserContainer .editButtonContainer {
+  margin: 0 10px;
+}
+
+.BlogUserContainer .editButtonContainer button.deleteButton {
+  border: 2px solid #eb00001c;
+  background-color: #e8551f29;
+  color: #e42d2d;
+  border-radius: 50%;
+}
+
+.BlogUserContainer .editButtonContainer button.deleteButton:hover {
+  background-color: #e8261f56;
+  color: #ec3f3f;
+}
+
+.BlogUserContainer .editButtonContainer button.editButton {
+  border: 2px solid #00800024;
+  background-color: #00800021;
+  color: #57ae27;
+  border-radius: 50%;
+}
+
+.BlogUserContainer .editButtonContainer button.editButton:hover {
+  background-color: #00800062;
+  color: #3f8619e7;
+}
+@media screen and (min-width: 320px) {
+  .BlogUserContainer .followButtonContainer {
+    display: flex;
+    margin-left: 10px;
+  }
+}
+@media screen and (min-width: 481px) {
+  .BlogUserContainer .followButtonContainer {
+    display: none;
+  }
+}
