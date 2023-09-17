@@ -3,13 +3,9 @@ import { Link, NavLink, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { BASE_URL } from "../helper/ref";
 import "../styles/Blog.css";
-import parse from "html-react-parser";
-import TagSuggestion from "./TagSuggestion";
-import Avatar from "react-avatar";
-import randomColor from "randomcolor";
+import { convert } from "html-to-text";
 
 const Blog = ({
-  blogImage,
   heading,
   uploadTime,
   userId,
@@ -20,27 +16,11 @@ const Blog = ({
 }) => {
   const [fullName, setFullName] = useState("");
   const [userName, setUserName] = useState("");
-  // console.log("PRS: ", parse(blogPreview.slice(0, 100)));
+  const [unplashImage, setUnplashImage] = useState("");
 
   let blogContentPreview = "";
-  // remove the new line objects
-  if (blogPreview) {
-    // added "<p><br/></p>" because, if there is only one element in the blogPreview then parse will not return array, and then we can't use the .filter() method inside the function.
-    let allData = parse(blogPreview + "<p><br/></p>");
-
-    blogContentPreview = allData.filter((data) => {
-      return data.props.children.type !== "br";
-    });
-
-    // concatnated the strings to make the string longer in preview
-    blogContentPreview = blogContentPreview
-      .map((tag) => tag.props.children)
-      .join(" ");
-
-    // slice the string upto 100 characters
-
-    blogContentPreview = blogContentPreview.split(" ").splice(0, 15).join(" ");
-  }
+  blogContentPreview = convert(blogPreview);
+  blogContentPreview = blogContentPreview.split(" ").slice(0, 17).join(" ");
 
   useEffect(() => {
     if (userId) {
@@ -59,6 +39,17 @@ const Blog = ({
         });
     }
   }, []);
+
+  // useEffect(() => {
+  //   (async () => {
+  //     const imageResponse = await axios.get(
+  //       "https://api.unsplash.com/search/photos?query=blog&client_id=UZPaZPnCoD0WJMmh6R-qnK3InJ2phfCnLSMaxxN9jlk&per_page=20"
+  //     );
+  //     setUnplashImage(
+  //       imageResponse.data.results[Math.floor(Math.random() * 20)].urls.full
+  //     );
+  //   })();
+  // }, [unplashImage]);
 
   return (
     <div className="Blog">
@@ -82,7 +73,7 @@ const Blog = ({
             {blogTags.map((tag, index) => {
               return (
                 <div className="blogTag" key={index}>
-                  {tag}
+                  #{tag}
                 </div>
               );
             })}
@@ -99,15 +90,16 @@ const Blog = ({
           Read More
         </Link>
       </div>
-      <NavLink to={`/bloginfo/${blogId}`} className={"imageLink"}>
+      {/* <NavLink to={`/bloginfo/${blogId}`} className={"imageLink"}>
         <div className="blogImage">
           <div className="headingContainer">
             {heading[0].length > 30
               ? heading[0].slice(0, 30) + "..."
               : heading[0]}
           </div>
+          <img src={unplashImage && unplashImage} alt="" />
         </div>
-      </NavLink>
+      </NavLink> */}
     </div>
   );
 };

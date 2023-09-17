@@ -11,6 +11,11 @@
   text-align: left;
   font-size: 1.6rem;
   color: rgb(19, 19, 19);
+  transition: all 200ms linear;
+}
+
+.Blog h1:hover {
+  color: #3c81ff;
 }
 
 .Blog .blogImage {
@@ -71,12 +76,12 @@
 }
 
 .Blog .blogTagsContainer .blogTag {
-  background-color: #e4e4e4;
-  border-radius: 27px;
+  background-color: #dce6f7;
+  border-radius: 4px;
   cursor: pointer;
   font-size: 0.9rem;
   margin-right: 7px;
-  padding: 4px 9px;
+  padding: 4px 7px;
   color: #585454;
   transition: all 0.2s linear;
 }
@@ -137,7 +142,7 @@
   }
 
   .Blog .blogDetails {
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
     margin-left: 20px;
   }

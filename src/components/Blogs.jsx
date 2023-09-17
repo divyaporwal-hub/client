@@ -4,13 +4,13 @@ import { BASE_URL } from "../helper/ref";
 import axios from "axios";
 import BlogImage from "../images/blog1.jpg";
 import ReactLoading from "react-loading";
-import { useState, useEffect , useRef} from "react";
+import { useState, useEffect, useRef } from "react";
 
 import "../styles/Blogs.css";
 import NoBlogs from "./NoBlogs";
 
 const INITIAL_BLOGS_TO_LOAD = 3; // Initial number of blogs to load
-const BLOGS_TO_LOAD_MORE = 3;    // Number of blogs to load on each "load more" click
+const BLOGS_TO_LOAD_MORE = 3; // Number of blogs to load on each "load more" click
 
 const Blogs = ({ searchTitle, searchTags, setRecBlogs, raonSearch }) => {
   const [allBlogs, setAllBlogs] = useState([]);
@@ -54,7 +54,6 @@ const Blogs = ({ searchTitle, searchTags, setRecBlogs, raonSearch }) => {
           setLoading(false);
         });
     } else if (searchTags.length > 0) {
-      console.log("Shikha: ", searchTags);
       axios
         .get(`${BASE_URL}/blog/getsearchtagsblog`, {
           params: {
@@ -84,7 +83,6 @@ const Blogs = ({ searchTitle, searchTags, setRecBlogs, raonSearch }) => {
     }
   }, [searchTitle, searchTags]);
 
-
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -94,7 +92,7 @@ const Blogs = ({ searchTitle, searchTags, setRecBlogs, raonSearch }) => {
       },
       {
         root: null,
-        rootMargin: '0px',
+        rootMargin: "0px",
         threshold: 0.1,
       }
     );
@@ -111,7 +109,9 @@ const Blogs = ({ searchTitle, searchTags, setRecBlogs, raonSearch }) => {
   }, [displayedBlogs]);
 
   const loadMoreBlogs = () => {
-    setDisplayedBlogs(prevDisplayedBlogs => prevDisplayedBlogs + BLOGS_TO_LOAD_MORE);
+    setDisplayedBlogs(
+      (prevDisplayedBlogs) => prevDisplayedBlogs + BLOGS_TO_LOAD_MORE
+    );
   };
 
   return (
@@ -135,9 +135,8 @@ const Blogs = ({ searchTitle, searchTags, setRecBlogs, raonSearch }) => {
             // Display blogs up to the displayedBlogs count
             allBlogs.slice(0, displayedBlogs).map((value, index) => (
               <div key={index} className="allBlogInfoContainer">
-                <div className="blogLine"></div>
+                {/* <div className="blogLine"></div> */}
                 <Blog
-                  blogImage={BlogImage}
                   heading={value.blogHeading}
                   blogTags={value.blogTags}
                   uploadTime={value.blogSaveTime}

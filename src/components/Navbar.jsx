@@ -23,14 +23,14 @@ const Navbar = ({ active }) => {
   return (
     <nav className={navOpen ? "Navbar showNav" : "Navbar hideNav"}>
       <ul className="navbarContainer">
-        <Link className="itemLink" to={"/"}>
+        {/* <Link className="itemLink" to={"/"}>
           <li className="menuItem menuItemLogo">
             <div className="menuItemText">
               <img src={LogoImage} alt="" height={50} />
             </div>
           </li>
-        </Link>
-        {localData && (
+        </Link> */}
+        {/* {localData && (
           <Link
             className="itemLink itemLinkUser"
             to={`/profile/${localData.userName}`}
@@ -44,23 +44,23 @@ const Navbar = ({ active }) => {
               <div>{localData.fullName}</div>
             </li>
           </Link>
-        )}
+        )} */}
 
-        <Link className="itemLink" to={"/"}>
+        {/* <Link className="itemLink" to={"/"}>
           <li className={active === "home" ? "menuItem activeNav" : "menuItem"}>
             <FontAwesomeIcon icon={faHouseUser} />
             <div>Home</div>
           </li>
-        </Link>
+        </Link> */}
 
-        <Link className="itemLink" to={localData ? "/write" : "/login"}>
+        {/* <Link className="itemLink" to={localData ? "/write" : "/login"}>
           <li
             className={active === "write" ? "menuItem activeNav" : "menuItem"}
           >
             <FontAwesomeIcon icon={faPenAlt} />
             <div>Write</div>
           </li>
-        </Link>
+        </Link> */}
 
         {localData === null ? (
           <>

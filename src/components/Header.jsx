@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import "../styles/Header.css";
 import axios from "axios";
 import { BASE_URL } from "../helper/ref";
-import { RiQuillPenLine } from "react-icons/ri";
 import { Link, NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPenAlt } from "@fortawesome/free-solid-svg-icons";
@@ -16,7 +15,6 @@ const Header = () => {
   const [searchText, setSearchText] = useState("");
   const [allBlogs, setAllBlogs] = useState([]);
   const [showSearchBox, setShowSearchBox] = useState(false);
-  const [githubHandle, setGitHubHandle] = useState("");
   const [profileData, setProfileData] = useState({});
 
   function handleSearch(e) {
@@ -60,13 +58,9 @@ const Header = () => {
       try {
         if (profileResult.data.length) {
           setProfileData(profileResult.data[0]);
-
-          // setProfileData(profileResult.data[0]);
-          // setLoading(false);
         }
       } catch (err) {
         console.log("Error: Profile can't be feched due to", err);
-        // setLoading(false);
       }
     }
 
@@ -80,7 +74,6 @@ const Header = () => {
           <Link to={"/"}>
             <h1 className="logoName">Kalam</h1>
           </Link>
-          {/* <form onSubmit="handleSubmit"> */}
           <div
             className="searchContainer"
             style={showSearchBox ? { display: "inline" } : { display: "none" }}
@@ -90,7 +83,7 @@ const Header = () => {
               name=""
               id=""
               value={searchText}
-              placeholder="Search a blog..."
+              placeholder="Search..."
               onChange={handleSearch}
             />
           </div>

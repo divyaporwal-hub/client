@@ -1,21 +1,27 @@
 .Profile {
-  width: calc(100% - 200px);
-  margin-left: 200px;
+  width: 80%;
+  margin: auto;
+  margin-top: 70px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .Profile .userSection {
-  background-color: #00082b;
-  width: 100%;
+  /* background-color: rgb(162, 196, 196); */
+  width: 80%;
   padding: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 10px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
 .Profile .blogSection {
-  width: 90%;
+  width: 80%;
   display: flex;
   align-items: center;
   margin: auto;
@@ -35,21 +41,4 @@
   height: 1px;
   width: 100%;
   background-color: #dddddd;
-}
-
-@media screen and (min-width: 320px) {
-  .Profile {
-    width: calc(100%);
-    margin-left: 0px;
-    display: flex;
-    flex-direction: column;
-  }
-}
-@media screen and (min-width: 481px) {
-  .Profile {
-    width: calc(100% - 200px);
-    margin-left: 200px;
-    display: flex;
-    flex-direction: column;
-  }
 }

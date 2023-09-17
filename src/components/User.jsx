@@ -1,5 +1,4 @@
 import React from "react";
-import AvatarImage from "../images/userAvatar.png";
 import Avatar from "react-avatar";
 import { NavLink } from "react-router-dom";
 

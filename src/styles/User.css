@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #ffffffd6;
+  /* color: #ffffffd6; */
 }
 
 .profileContainer img {
@@ -54,7 +54,7 @@
 }
 
 .profileContainer .socialMedia a:hover {
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .profileContainer .editButtonLink {

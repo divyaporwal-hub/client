@@ -15,20 +15,24 @@
   font-family: "Inter", sans-serif;
 }
 
+body {
+  background-color: #f7f7f7;
+}
+
 button {
   color: white;
-  background-color: #191970;
+  background-color: #3cb2ff;
   outline: none;
   font-size: 1.3rem;
-  padding: 5px 10px;
-  border-radius: 4px;
+  padding: 3px 15px;
+  border-radius: 18px;
   border: none;
   cursor: pointer;
   transition: all 200ms linear;
 }
 
 button:hover {
-  background-color: #2424a9;
+  background-color: #1f94e2;
 }
 
 button:active {

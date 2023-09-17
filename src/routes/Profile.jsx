@@ -87,18 +87,28 @@ const Profile = () => {
   }, [userName]);
   return (
     <>
-      <Navbar active={"profile"} />
+      {/* <Navbar active={"profile"} /> */}
       <div className="Profile">
         <section className="userSection">
           {loading ? (
-            <div className="loaderContainer">
+            <div
+              className="loaderContainer"
+              style={{
+                display: "flex",
+                width: "100%",
+                flexDirection: "column",
+                alignItems: "center",
+              }}
+            >
               <ReactLoading
                 type={"spin"}
                 color={"#45aaff"}
                 height={50}
                 width={50}
               />
-              <div>Fetching the blog...</div>
+              <div style={{ marginTop: "10px", color: "white" }}>
+                Please wait, Getting Your Profile...
+              </div>
             </div>
           ) : (
             <User

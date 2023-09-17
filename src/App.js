@@ -13,12 +13,13 @@ import EditProfile from "./routes/EditProfile";
 import EditBlog from "./routes/EditBlog";
 import Otp from "./routes/Otp";
 import SearchResult from "./components/SearchResult";
-import Footer from "./components/Footer";
+import Header from "./components/Header";
 
 function App() {
   return (
-    <>
+    <div>
       <Router>
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
@@ -35,8 +36,7 @@ function App() {
           <Route path="/profile/edit/:userName" element={<EditProfile />} />
         </Routes>
       </Router>
-      {/* <Footer /> */}
-    </>
+    </div>
   );
 }
 
