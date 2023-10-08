@@ -27,7 +27,6 @@
     "randomcolor": "^0.6.2",
     "react": "^18.2.0",
     "react-avatar": "^5.0.3",
-    "react-country-dropdown": "^1.0.4",
     "react-dom": "^18.2.0",
     "react-draft-wysiwyg": "^1.15.0",
     "react-icons": "^4.7.1",
@@ -37,7 +36,6 @@
     "react-rte": "^0.16.5",
     "react-scripts": "^5.0.1",
     "react-select": "^5.7.1",
-    "react-select-country-list": "^2.2.3",
     "react-share": "^4.4.1",
     "react-simple-animate": "^3.5.2",
     "react-tag-input-component": "^2.0.2",
@@ -52,7 +50,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -75,5 +75,8 @@
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
+  }
 }
